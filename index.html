@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="./Src/styles/main.css">
+</head>
+<body>
+    <div class="contener-1">
+        <form method="post" action="/calcular">
+            <div class="contener-2">
+                <h2 id="display"></h2>
+                <div>
+                    <button class="delete" onclick="limpar()">AC</button>
+                    <button class="sinal" onclick="adicionarTexto('.')">.</button>
+                    <button class="sinal" onclick="adicionarTexto('%')">%</button>
+                    <button class="sinal" onclick="adicionarTexto('/')">/</button>
+                </div>
+                <div class="linha-2">
+                    <button class="numero" onclick="adicionarTexto('7')">7</button>
+                    <button class="numero" onclick="adicionarTexto('8')">8</button>
+                    <button class="numero" onclick="adicionarTexto('9')">9</button>
+                    <button class="sinal" onclick="adicionarTexto('*')">x</button>
+                </div>
+                <div class="linha-3">
+                    <button class="numero" onclick="adicionarTexto('4')">4</button>
+                    <button class="numero" onclick="adicionarTexto('5')">5</button>
+                    <button class="numero" onclick="adicionarTexto('6')">6</button>
+                    <button class="sinal" onclick="adicionarTexto('-')">-</button>
+                </div>
+                <div class="linha-4">
+                    <button class="numero" onclick="adicionarTexto('1')">1</button>
+                    <button class="numero" onclick="adicionarTexto('2')">2</button>
+                    <button class="numero" onclick="adicionarTexto('3')">3</button>
+                    <button class="sinal" onclick="adicionarTexto('+')">+</button>
+                </div>
+                <div class="linha-5">
+                    <button class="numero" onclick="adicionarTexto('0')">0</button>
+                    <button class="numero" onclick="adicionarTexto('.')">.</button>
+                    <button class="apagar" onclick="apagarUltimo()"><=</button>
+                    <button class="igual" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/calculadora.js"></script>
+</body>
+</html>

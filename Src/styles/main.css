@@ -1,0 +1,41 @@
+.contener-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 10%; 
+}
+.contener-2{
+    width: 220px;
+    border: 3px solid;
+    background-image: url("https://img.freepik.com/vetores-premium/calculadora-um-plano-de-fundo_16643-2998.jpg");
+}
+button{
+    border: 0px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.numero{
+   background-color: #f0f8ff;
+   font-weight: bold;
+}
+.sinal{
+    background-color: rgb(201, 253, 253);
+    font-weight: bold;
+}
+.delete{
+    background-color: rgb(235, 253, 192);
+    font-weight: bold;
+}
+.igual{
+    background-color: rgb(209, 219, 248);
+    font-weight: bold;
+}
+.apagar{
+    background-color: #f0f8ff;
+    font-weight: bold; 
+}
+h2{
+    border: 3px solid;
+    background-color: #f0f8ff;
+}
